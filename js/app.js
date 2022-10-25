@@ -40,7 +40,7 @@ function update() {
         dvd.y+=dvd.yspeed;
         //Check for collision 
         checkHitBox();
-        update();   
+        update();
     }, speed)
 }
 
@@ -62,7 +62,7 @@ function pickColor(){
     r = Math.random() * (254 - 0) + 0;
     g = Math.random() * (254 - 0) + 0;
     b = Math.random() * (254 - 0) + 0;
-    setTimeout(() => {dvd.img.src ='asset/test3.png';},10)
-    setTimeout(() => {dvd.img.src ='asset/test.png';},250)
+    setTimeout(() => {dvd.img.src ='asset/FabTrigger.png';},10)
+    setTimeout(() => {dvd.img.src ='asset/Fab.png';},250)
     logoColor = 'rgb('+r+','+g+', '+b+')';
 }
