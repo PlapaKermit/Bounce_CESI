@@ -31,6 +31,11 @@ function update() {
         //Draw the canvas background
         ctx.fillStyle = '#000';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
+        //check the window size
+        if(canvas.width != window.innerWidth || canvas.height != window.innerHeight){
+            canvas.width  = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
         //Draw DVD Logo and his background
         ctx.fillStyle = logoColor;
         ctx.fillRect(dvd.x, dvd.y, dvd.img.width*scale, dvd.img.height*scale);
@@ -62,7 +67,11 @@ function pickColor(){
     r = Math.random() * (254 - 0) + 0;
     g = Math.random() * (254 - 0) + 0;
     b = Math.random() * (254 - 0) + 0;
-    setTimeout(() => {dvd.img.src ='asset/FabTrigger.png';},10)
-    setTimeout(() => {dvd.img.src ='asset/Fab.png';},250)
+    //switch temporary the image
+    setTimeout(() => {dvd.img.src ='asset/FabTrigger.png';},10);
+    setTimeout(() => {dvd.img.src ='asset/Fab.png';},250);
+    //song play
+    let audio = new Audio('asset/augh.mp3');
+    audio.play();
     logoColor = 'rgb('+r+','+g+', '+b+')';
 }
