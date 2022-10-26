@@ -4,6 +4,7 @@ let canvas;
 let ctx;
 let logoColor;
 var x = 1;
+let audio = new Audio('asset/augh.mp3');
 
 let dvd = {
     x: 200,
@@ -71,7 +72,7 @@ function pickColor(){
     setTimeout(() => {dvd.img.src ='asset/FabTrigger.png';},10);
     setTimeout(() => {dvd.img.src ='asset/Fab.png';},250);
     //song play
-    let audio = new Audio('asset/augh.mp3');
+
     audio.play();
     logoColor = 'rgb('+r+','+g+', '+b+')';
 }
