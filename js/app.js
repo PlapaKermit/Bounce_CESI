@@ -17,7 +17,7 @@ let dvd = {
 (function main(){
     canvas = document.getElementById("tv-screen");
     ctx = canvas.getContext("2d");
-    dvd.img.src = 'asset/test.png';
+    dvd.img.src = 'asset/happy.png';
 
    //Draw the "tv screen"
     canvas.width  = window.innerWidth;
@@ -72,11 +72,11 @@ function pickColor(){
 
     //Image Fabrice Trigger
     //switch temporary the image
-    setTimeout(() => {dvd.img.src ='asset/Happytrigger.png';},10);
+    setTimeout(() => {dvd.img.src ='asset/HappyTriggra.png';},10);
     setTimeout(() => {dvd.img.src ='asset/happy.png';},250);
     //song play
 
-    audio.play();
+    //audio.play();
 
 
     logoColor = 'rgb('+r+','+g+', '+b+')';
