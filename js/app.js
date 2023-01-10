@@ -70,10 +70,10 @@ function pickColor(){
     b = Math.random() * (254 - 0) + 0;
 
 
-     //Image Fabrice Trigger
+    //Image Fabrice Trigger
     //switch temporary the image
-    setTimeout(() => {dvd.img.src ='asset/FabTrigger.png';},10);
-    setTimeout(() => {dvd.img.src ='asset/Fab.png';},250);
+    setTimeout(() => {dvd.img.src ='asset/Happytrigger.png';},10);
+    setTimeout(() => {dvd.img.src ='asset/happy.png';},250);
     //song play
 
     audio.play();
