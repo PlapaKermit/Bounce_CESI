@@ -68,7 +68,11 @@ function pickColor(){
     r = Math.random() * (254 - 0) + 0;
     g = Math.random() * (254 - 0) + 0;
     b = Math.random() * (254 - 0) + 0;
-   /* //Image Fabrice Trigger
+   //switch image
+    setTimeout(() => {dvd.img.src = 'asset/Happy triggra.png';}, 10);
+    setTimeout(() => {dvd.img.src = 'asset/happy.png';}, 250);
+
+    /* //Image Fabrice Trigger
     //switch temporary the image
     setTimeout(() => {dvd.img.src ='asset/FabTrigger.png';},10);
     setTimeout(() => {dvd.img.src ='asset/Fab.png';},250);
