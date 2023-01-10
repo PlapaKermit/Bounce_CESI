@@ -79,6 +79,8 @@ function pickColor(){
     //song play
 
     audio.play();
+
+     */
     logoColor = 'rgb('+r+','+g+', '+b+')';
-    */
+
 }
