@@ -1,4 +1,4 @@
-let speed = 20;
+let speed = 25;
 let scale = 0.38; // Image scale (I work on 1080p monitor)
 let canvas;
 let ctx;
@@ -76,7 +76,7 @@ function pickColor(){
     setTimeout(() => {dvd.img.src ='asset/happy.png';},250);
     //song play
 
-    //audio.play();
+    audio.play();
 
 
     logoColor = 'rgb('+r+','+g+', '+b+')';
