@@ -7,8 +7,8 @@ var x = 1;
 let audio = new Audio('asset/augh.mp3');
 
 let dvd = {
-    x: 200,
-    y: 300,
+    x: 500, //200 For Fab / 500 for Happy
+    y: 500, //300 For Fab / 500 for Happy
     xspeed: 2,
     yspeed: 2,
     img: new Image()
